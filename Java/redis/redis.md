@@ -9,6 +9,26 @@
 >https://cloud.tencent.com/developer/article/1594109  StringRedisTemplate 和RedisTemlate有什么不同
 >
 >https://zhuanlan.zhihu.com/p/47692277  Redis 常用操作命令，非常详细！
+>
+>https://blog.csdn.net/zhuimeng_by/article/details/90515456     Linux上Redis的启动、使用和停止
+
+#### Redis常用命令 
+
+##### Linux 
+
+启动
+
+~~~
+cd src
+./redis-server
+~~~
+
+停止
+
+~~~
+~~~
+
+
 
 #### SpringBoot 整合redis
 
