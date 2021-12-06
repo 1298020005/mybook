@@ -111,9 +111,18 @@ sudo service docker start
 
 5. 启动命令
 
+   ~~~shell
+    docker run -p 6379:6379 --name redis -v /usr/local/docker/redis.conf:/etc/redis/redis.conf -v /usr/local/docker/data:/data -d redis redis-server /etc/redis/redis.conf --appendonly yes    
+    # 不挂载配置文件： 
+   docker run --name redis -p 6379:6379 -d --restart=always redis redis-server --appendonly yes --requirepass "这是密码"
    ~~~
-   docker run  --name edu-admin -d edu-admin
-   ~~~
+
+   - -p 6379:6379 端口映射：前表示主机部分，：后表示容器部分。
+   - --name redis  指定该容器名称，查看和进行操作都比较方便。
+   - -v 挂载目录，规则与端口映射相同。
+   - -d redis 表示启动的容器是
+   - redis-server /etc/redis/redis.conf  以配置文件启动redis，加载容器内的conf文件，最终找到的是挂载的目录/usr/local/docker/redis.conf
+   - appendonly yes 开启redis 持久化
 
 6. 其他 
 
@@ -135,6 +144,12 @@ sudo service docker start
     docker stop $(docker ps -a -q) 
    ~~~
 
+   删除所有停止容器
+
+   ~~~
+   docker rm $(sudo docker ps -aq)
+   ~~~
+
    手动拉取镜像
 
    ~~~
@@ -143,7 +158,7 @@ sudo service docker start
 
    
 
-##### 删除无效的<none>Docker镜像
+##### 删除无效的< none >Docker镜像
 
 
 ~~~
@@ -214,9 +229,14 @@ VOLUME 指定了临时文件目录为/tmp。其效果是在主机 /var/lib/docke
 
 如果是第一次打包，它会自动下载java 8的镜像作为基础镜像，以后再制作镜像的时候就不会再下载了。
 
+
+
+#### docker 网络:host模式
+
+>https://www.cnblogs.com/freeaihub/p/13197292.html  docker 网络:host模式
+
 #### docker 无法关闭
 
 >https://blog.csdn.net/qq_38837032/article/details/119863238 
-
 
 

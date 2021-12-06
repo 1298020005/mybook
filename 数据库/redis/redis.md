@@ -8,9 +8,17 @@
 >
 >https://cloud.tencent.com/developer/article/1594109  StringRedisTemplate 和RedisTemlate有什么不同
 >
+>https://blog.csdn.net/lydms/article/details/105512006 同上
+>
 >https://zhuanlan.zhihu.com/p/47692277  Redis 常用操作命令，非常详细！
 >
 >https://blog.csdn.net/zhuimeng_by/article/details/90515456     Linux上Redis的启动、使用和停止
+>
+>https://blog.csdn.net/qq_17132757/article/details/114234315    Springboot 启动异常Unable to read meta-data for class 待解决 
+>
+>http://www.coozhi.com/youxishuma/g4/89226.html  JedisConnectionFactory如何获取Redis
+>
+>https://blog.csdn.net/lydms/article/details/105224210 RedisTemplate操作redis api
 
 #### Redis常用命令 
 
@@ -45,7 +53,21 @@ cd src
 </dependency>
 ~~~
 
-#### Redis API 介绍 
+##### RedisRedisConfigurtion 配置 
+
+在未配置时
+
+<img src="C:\Users\12980\Pictures\typora图片\image-20211202151720838.png" alt="image-20211202151720838" style="zoom:80%;" />
+
+定义一个全局的 Redis 的配置类，以后就无需每次使用都进行序列化器(见代码RedisConfigurtion.java)
+
+![image-20211202154559701](C:\Users\12980\Pictures\typora图片\image-20211202154559701.png)
+
+
+
+#### Redis API 
+
+##### 介绍
 
 Spring Boot 提供的 Redis API 分为 **高阶 API** 和 **低阶 API**，**高阶 API 是经过一定封装后的 API**，而**低阶 API 的使用和直接使用 Redis 的命令差不多**。
 
@@ -53,13 +75,73 @@ Spring Boot 提供的 Redis API 分为 **高阶 API** 和 **低阶 API**，**高
 
  **低阶 API 其实也是通过 RedisTemplate 或 StringRedisTemplate 来进行获取。低阶 API 的方法和 Redis 的命令差不多**。
 
-#### Redis 高阶 API
+##### Redis 两个 高阶 API的不同
 
 >https://cloud.tencent.com/developer/article/1594109  StringRedisTemplate 和RedisTemlate有什么不同 *** 待整理
+>
+>https://blog.csdn.net/lydms/article/details/105512006  两者区别
 
-Redis 低阶API 
+
+
+##### RedisTemplate 
+
+>https://blog.csdn.net/lydms/article/details/105224210 列举了 基础的函数
+>
+>https://blog.csdn.net/xinhuashudiao/category_8513755.html  详细描述了每一个函数的使用
+
+##### String类型操作
+
+1. 添加缓存
+
+   ~~~java
+   //1、通过redisTemplate设置值
+   redisTemplate.boundValueOps("StringKey").set("StringValue");
+   redisTemplate.boundValueOps("StringKey").set("StringValue",1, TimeUnit.MINUTES);
+   
+   //2、通过BoundValueOperations设置值
+   BoundValueOperations stringKey = redisTemplate.boundValueOps("StringKey");
+   stringKey.set("StringVaule");
+   stringKey.set("StringValue",1, TimeUnit.MINUTES);
+   
+   //3、通过ValueOperations设置值
+   ValueOperations ops = redisTemplate.opsForValue();
+   ops.set("StringKey", "StringVaule");
+   ops.set("StringValue","StringVaule",1, TimeUnit.MINUTES);
+   ~~~
+
+   boundValueOps类型的操作是获取到一个Opercation,但是没有指定操作的key,可以在一个连接(事务)内操作多个key以及对应的value;opsForValue类型的会获取到一个指定了key的operation,在一个连接内只操作这个key对应的value。
+
+   人话就是前者未明确key-value的对应关系，后者唯一对应了关系。
+
+2. 
+
+##### Redis 低阶API 
 
 序列化
+
+##### SpringDataRedis (教学不涉及，暂且搁置)
+
+>https://blog.csdn.net/lydms/article/details/96733376   SpringDataRedis
+
+#### 代码例子
+
+##### 初始值的赋值
+
+~~~java
+    //直接测试，赋值为字符串
+    public void testRedisTemplate()
+    {
+        ValueOperations valueOperations = redisTemplate.opsForValue();
+        valueOperations.set("key1", "日照香炉生紫烟");
+        valueOperations.set("key2", "老板就是我的天");
+        System.out.println(valueOperations.get("key1"));
+        System.out.println(valueOperations.get("key2"));
+    }
+~~~
+
+我们通过 redisTemplate (上文的API介绍里提到)的 opsForValue 得到一个 ValueOperations 的实例，然后通过它来操作 Redis 的字符串类型。使用它的 set 方法添加了 key1 和 key2 两个键值对。然后，通过它的 get 方法又读取了这两个键对应的值。
+
+之后可以将其封装为，redisUtil类
 
 #### Redis为什么有16 个数据库？
 
@@ -80,6 +162,4 @@ Redis的多个实例使您可以利用多个核心，在监视和管理多个实
 >https://www.w3cschool.cn/redis/redis-evz12p08.html   Redis可视化工具Redis Desktop Manager使用教程
 >
 >https://www.cnblogs.com/qingmuchuanqi48/p/11966568.html Redis DeskTop Manager 使用教程 
->
->
 
