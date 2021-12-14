@@ -1,5 +1,7 @@
 ## docker	
 
+>https://zhuanlan.zhihu.com/p/53260098  ***10分钟看懂Docker和K8S***
+>
 >https://cloud.tencent.com/developer/article/1386100 docker 安装 
 >
 >https://cloud.tencent.com/developer/article/1622955 docker 及其常用命令 *
@@ -238,5 +240,4 @@ VOLUME 指定了临时文件目录为/tmp。其效果是在主机 /var/lib/docke
 #### docker 无法关闭
 
 >https://blog.csdn.net/qq_38837032/article/details/119863238 
-
 
