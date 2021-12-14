@@ -34,3 +34,18 @@
 >http://www.iamlintao.com/6976.html Go基础：函数声明之方法接受者（函数名之前括号中的内容） ***
 >
 >http://c.biancheng.net/view/5714.html go语言 context
+
+
+
+#### gorm 技术文档 
+
+>https://gorm.io/zh_CN/docs/models.html  模型定义gorm model 
+>
+>https://blog.csdn.net/qq_41359051/article/details/104352602      GORM 字段使用自定义类型 
+>
+>https://gorm.io/zh_CN/docs/data_types.html 自定义数据类型 
+>
+>
+
+gorm 中 使用 如 where pluck model等都非常有趣。
+
