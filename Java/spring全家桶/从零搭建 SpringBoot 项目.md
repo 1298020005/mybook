@@ -10,3 +10,15 @@
 >
 >Spring Boot | 使用IntelliJ IDEA 2020从零开始搭建一个springboot项目
 
+
+
+#### 创建项目
+
+>版本为2021.1.3 不同版本idea会有所不同
+
+选择new 一个项目 
+
+![image-20211214140521763](C:\Users\12980\Pictures\typora图片\image-20211214140521763.png)
+
+![image-20211214140446989](C:\Users\12980\Pictures\typora图片\image-20211214140446989.png)
+

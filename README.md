@@ -3,8 +3,22 @@
 #### 待解决
 
 1. 序列化
+
 2. 教学 平台 sql 索引优化  尤其是教材目录递归删除的
+
 3. 从零搭建spring boot 项目 
+
+4. 空指针异常问题
+
+   >https://blog.csdn.net/weixin_41860630/article/details/105771546  深究“HashMap在进行put操作时出现的空指针异常” 
+   >
+   >https://blessing.blog.csdn.net/article/details/106696850     java.lang.NullPointerException空指针异常（解决方案） 
+   >
+   >https://blog.csdn.net/weixin_45202377/article/details/91298676   关于map.put()方法，报java.lang.NullPointerException空指针异常 
+   >
+   >https://blog.csdn.net/qq116165600/article/details/102841575   java中Map判断是否为空之isEmpty()与==null的区别 *** 
+   >
+   >https://www.cnblogs.com/zlj1992/p/7306776.html  获得map中最大的value以及最大的key
 
 #### 必要看的
 
