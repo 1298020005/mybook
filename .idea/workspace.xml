@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ab57c4c-5695-4dd0-9b89-5dc23a29151c" name="Default Changelist" comment="" />
+    <list default="true" id="3ab57c4c-5695-4dd0-9b89-5dc23a29151c" name="Default Changelist" comment="12-14日补充">
+      <change beforePath="$PROJECT_DIR$/Java/spring全家桶/从零搭建 SpringBoot 项目.md" beforeDir="false" afterPath="$PROJECT_DIR$/Java/spring全家桶/从零搭建 SpringBoot 项目.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/常用工具/快捷键.md" beforeDir="false" afterPath="$PROJECT_DIR$/常用工具/快捷键.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/教学平台/教学平台.md" beforeDir="false" afterPath="$PROJECT_DIR$/教学平台/教学平台.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/问题/问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/问题/问题.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="21afMqgHWrF5b1GiaCEc1r1EzVd" />
   <component name="ProjectViewState">
@@ -17,6 +26,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -27,10 +41,64 @@
       <option name="presentableId" value="Default" />
       <updated>1638184074361</updated>
       <workItem from="1638184076326" duration="343000" />
+      <workItem from="1638409199467" duration="378000" />
+      <workItem from="1638782114013" duration="1084000" />
+      <workItem from="1639460803525" duration="926000" />
+      <workItem from="1639531804750" duration="595000" />
+      <workItem from="1639563579163" duration="626000" />
+      <workItem from="1639618196844" duration="591000" />
+      <workItem from="1639704737812" duration="599000" />
     </task>
+    <task id="LOCAL-00001" summary="12-11日补充">
+      <created>1638409225946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638409225946</updated>
+    </task>
+    <task id="LOCAL-00002" summary="12-6日补充">
+      <created>1638782178327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638782178327</updated>
+    </task>
+    <task id="LOCAL-00003" summary="12-14日补充">
+      <created>1639460856439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639460856439</updated>
+    </task>
+    <task id="LOCAL-00004" summary="12-14日补充">
+      <created>1639461092423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639461092423</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="12-11日补充" />
+    <MESSAGE value="12-6日补充" />
+    <MESSAGE value="12-14日补充" />
+    <option name="LAST_COMMIT_MESSAGE" value="12-14日补充" />
   </component>
 </project>
