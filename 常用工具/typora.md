@@ -14,3 +14,6 @@
 
 >https://blog.csdn.net/qq_20515461/article/details/106809249     Markdown 交叉引用
 
+#### 破解版本
+
+>https://www.nite07.com/typora/
