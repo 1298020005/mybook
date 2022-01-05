@@ -91,3 +91,18 @@ FROM Employee AS a, Employee AS b;
 时间类不可以直接用 a - b =1
 
 应该用DATEDIFF(a,b)=1
+
+
+
+#### 条件判别 case when if 
+
+~~~ sql
+//交换性别 sex 这一列的值是 ENUM 类型，只能从 ('m', 'f') 中取。
+update salary
+set
+    sex = case sex
+        when 'm' then 'f'
+        else 'm'
+    end;
+~~~
+
