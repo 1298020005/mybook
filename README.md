@@ -23,8 +23,16 @@
 #### 必要看的
 
 1. b战 程序员鱼皮 关于java 进阶路线的
+
 2. 毕向东
+
 3. 小册子
+
+4. 一些好的博主的文章
+
+   >① https://blog.csdn.net/winterking3/category_10897703.html?spm=1001.2014.3001.5482  其 stream 流和 多线程 一定要好好看
+   >
+   >② https://www.zhihu.com/people/xiao-hui-68-47/posts 小灰对算法 设计模式的讲述 比较生动,没有那么无聊.
 
 此网站不错 http://c.biancheng.net/
 
