@@ -33,6 +33,8 @@
    >① https://blog.csdn.net/winterking3/category_10897703.html?spm=1001.2014.3001.5482  其 stream 流和 多线程 一定要好好看
    >
    >② https://www.zhihu.com/people/xiao-hui-68-47/posts 小灰对算法 设计模式的讲述 比较生动,没有那么无聊.
+   >
+   >③ https://blog.csdn.net/a13545564067/article/details/105589387  此人代码例子及其生动,建议把博客文章浏览一下。
 
 此网站不错 http://c.biancheng.net/
 
@@ -54,7 +56,9 @@
 
 ##### leetcode刷题
 
-##### 三个项目掌握
+>简单题刷的差不多了 中等题开始刷
+
+##### 做过的项目掌握
 
 - 教学平台
 
@@ -69,6 +73,10 @@
 - 社区
 
   熟悉相关框架及其技术
+
+- 官网改造
+
+  
 
 ##### 小册子看完
 
